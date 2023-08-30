@@ -15,11 +15,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: black;
+    background: white;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,00.5);
 }
 nav .logo img{
     width: 120px;
@@ -33,21 +34,33 @@ nav ul li{
     margin: 0 10px;
 }
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 50px;
+
 }
 nav ul li a:hover{
-    color: black;
+    color: red;
     transition: 0.5s
 }
 .login a{
-    color: white;
+    color: black;
     text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 .login a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s
+}
+.login i{
+    font-size: 30px;
     color: black;
-    transition: 0.3s;
 }
 
 /*--Header--*/
@@ -72,6 +85,7 @@ nav ul li a:hover{
     top: -25px;
     margin-top: 200px;
     text-align: center;
+    font-size: 60px;
 }
 .main-heading h2{
     color: white;
