@@ -61,7 +61,7 @@ nav ul li a:hover{
 
 /*--Header--*/
 .main{
-    background-image: linear-gradient(#8bc5f0, #cae6fc);
+    background-image: url('/images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -91,21 +91,40 @@ nav ul li a:hover{
     line-height: 23px;
     text-align: center;
 }
-/*--Button--*/
-.main .btn{
-    color: white;
+/*--Header Button--*/
+.button1{
+    color: black;
     text-decoration: none;
     border: 2px solid;
-    border-radius: 30px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: relative;
     top: 100px;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: 550;
 }
-.main .btn:hover{
-    background-color: white;
-    transition: 0.5s;
+.button1:hover{
+  background: black;
+  color: white;
+  border: black;
 }
+.button2{
+  color: black;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 15px 20px;
+  position: relative;
+  top: 100px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 550;
+}
+.button2:hover{
+background: black;
+color: white;
+border: black;
+}
+
 /*--food section--*/
 .seller h1{
     text-align: center;
