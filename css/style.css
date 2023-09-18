@@ -93,7 +93,7 @@ nav ul li a:hover{
 }
 /*--Button--*/
 .main .btn{
-    color: black;
+    color: white;
     text-decoration: none;
     border: 2px solid;
     border-radius: 30px;
@@ -103,9 +103,7 @@ nav ul li a:hover{
     align-items: center;
 }
 .main .btn:hover{
-    background-color: black;
-    border-color: black;
-    color: white;
+    background-color: white;
     transition: 0.5s;
 }
 /*--food section--*/
@@ -121,6 +119,7 @@ nav ul li a:hover{
     padding: 30px 20px;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    text-align: center;
 }
 .item img{
     width: 100%;
@@ -132,40 +131,326 @@ nav ul li a:hover{
 .item img:hover{
     transform: scale(1.04);
 }
+.item h4{
+    font-size: 30px;
+}
+.item button{
+    padding: 5px 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
 /*--About Section on Homepage--*/
 .about{
     width: 100%;
-    height: 100vh;
-    padding: 100px 0 0 0;
-    background-color: lightblue;
-}
-.about-main{    
+    padding: 100px 0px; 
+    background-color: #8bc5f0;
+  }
+  .about img{
+    height: auto;
+    width: 430px;
+  }
+  .about-text{
+    width: 550px;
+  }
+  .abouts{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    position: relative;
-    justify-content: space-around
+    justify-content: space-around;
+  }
+  .about-text h2{
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .about-text h4{
+    color: black;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 19px;
+    margin-bottom: 45px;
 }
-.about-main img{
-    width: 300px;
-}
-.about-text h1{
-    font-size: 45px;
-    position: relative;
-    bottom: 40px;
-}
-.about-text h2{ 
-    position: relative;
-    bottom: 10px;
-    font-size: 25px;
-}
-.about-text p{
-    width: 650px;
-    text-align: justify;
-    line-height: 23px;
-    margin-top: 20px;
-}
-.about-btn{ 
+  button{
     text-decoration: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 30px;
     font-size: 15px;
-    margin-right: 8px;
+    padding: 14px 60px;
+    transition: .2s
+}
+  button:hover{
+    background-color: green;
+  
+  }
+  footer{
+    background-color: black;
+    height: auto;
+    padding-top: 40px;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    color: white;
+  }
+  
+  footer p{
+    color: white;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+    padding-right: 10px;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1.1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 29px;
+  }
+  .socials li a:hover{
+    color: red;
+  }
+  .footer-menu{
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-menu ul{
+    display: flex;
+  }
+  .footer-menu ul li{
+    display: block;
+  }
+  .footer-menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+  }
+  .footer-menu ul li a:hover{
+    color: #8bc5f0;
+  }
+  .footer-bottom{
+    background: black;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.shop-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  padding-top: 2rem;
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.shop-box{
+  position: relative;
+  flex: 1 1 17rem;
+  box-shadow: 0 4px 4px rgb(14 55 54 / 15%);
+  border-radius: 0.5rem;
+  height: auto;
+}
+.shop-img{
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.shop-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.shop-img img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.shop-box h3{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+.shop-box h2{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: grey;
+}
+.shop-box p{
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+.shop-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 10px;
+  margin: 0 80px;
+  border-radius: 10px 10px 0px 0px;
+}
+.shop-btn:hover{
+  background: grey;
+}
+/*--Page Banner--*/
+.banner-area{
+  background-size: cover;
+  background-position: center center;
+  max-width:100%;
+  padding-bottom: 160px;
+  margin:0 auto;
+  background-color: #8bc5f0;
+}
+.banner-area h6{
+  text-align: center;
+  padding-top: 10%;
+  font-size: 70px;
+  color: black;
+}
+
+.banner-area p{
+  text-align: center;
+  padding-top: 2px;
+  font-size: 20px;
+  color: black;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: gray; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+.contact-box{
+    max-width: 1130px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.contact p{
+  padding: 1rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+  padding-right: 10px;
+}
+
+.left{
+    background: url("background.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.right{
+    padding: 3rem 40px;
+}
+
+.field{
+    width: 100%;
+  max-width: 500px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+  border-radius: 1px;
+  width: 500px;
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.field:focus{
+  border: 2px solid rgba(30,85,250,0.47);
+  background-color: #fff;
 }
