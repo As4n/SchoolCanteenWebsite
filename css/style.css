@@ -86,7 +86,7 @@ nav ul li a:hover{
 .main-heading h2{
     color: white;
     position: relative;
-    top: 25px;
+    top: 40px;
     font-weight: 300;
     line-height: 23px;
     text-align: center;
@@ -100,7 +100,6 @@ nav ul li a:hover{
     position: relative;
     top: 100px;
     align-items: center;
-    text-transform: uppercase;
     font-weight: 550;
 }
 .button1:hover{
@@ -124,11 +123,18 @@ background: black;
 color: white;
 border: black;
 }
-
 /*--food section--*/
+.seller-hr{
+  height: 30px;
+  border-width:0;
+  background-color: #8bc5f0;
+}
+
 .seller h1{
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  font-size: 35px;
+  text-transform: uppercase;
 }
 
 .item-section{
@@ -140,13 +146,17 @@ border: black;
 }
 .item-card{
   flex: 1;
-  margin: 70px 20px;
+  margin: 50px 20px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
 }
 .item-card img{
   width:  100%;
   height: auto;
+}
+.item-card img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .item-section .item-card h4{
   margin: 15px 0px;
@@ -159,15 +169,28 @@ border: black;
   padding: 0px 10px;
   margin-bottom: 20px;
 }
+.seller-button{
+  background-color: red;
+  padding-bottom: 50px; 
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
 /*--About Section on Homepage--*/
+.about-hr{
+  height: 10px;
+  border-width: 0;
+  background-color: rgb(237, 236, 236);
+}
+
 .about{
     width: 100%;
     padding: 100px 0px; 
     background-color: #8bc5f0;
   }
   .about img{
-    height: auto;
-    width: 430px;
+    width: 500px;
   }
   .about-text{
     width: 550px;
@@ -200,19 +223,20 @@ border: black;
     font-size: 19px;
     margin-bottom: 45px;
 }
-  button{
+.contact-button{
     text-decoration: none;
     background-color: white;
     border: none;
     cursor: pointer;
     outline: none;
-    border-radius: 30px;
     font-size: 15px;
     padding: 14px 60px;
     transition: .2s
 }
-  button:hover{
-    background-color: green;
+.contact-button:hover{
+    background-color: black;
+    color: white;
+    border: none;
   
   }
   footer{
@@ -354,6 +378,40 @@ border: black;
 }
 .shop-btn:hover{
   background: grey;
+}
+/*--Service Section--*/
+h5{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 42px;
+}
+
+.service{
+  width: 85%;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+  text-align: center;
+}
+.service-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+.service-card{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 0px;
+  padding: 20px 20px;
+  background-color: grey;
+  border-radius: 10px;
 }
 /*--Page Banner--*/
 .banner-area{
