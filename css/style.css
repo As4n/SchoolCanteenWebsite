@@ -92,7 +92,8 @@ nav ul li a:hover{
 }
 
 .main-heading h2{
-    color: white;
+    color: black;
+    font-weight: bold;
     position: relative;
     top: 40px;
     font-weight: 300;
@@ -115,22 +116,6 @@ nav ul li a:hover{
   background: black;
   color: white;
   border: black;
-}
-.button2{
-  color: black;
-  text-decoration: none;
-  border: 2px solid;
-  padding: 15px 20px;
-  position: relative;
-  top: 100px;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: 550;
-}
-.button2:hover{
-background: black;
-color: white;
-border: black;
 }
 
 /* ==================== FOOD SECTION ==================== */
@@ -378,13 +363,13 @@ h5{
   background-size: cover;
   background-position: center center;
   max-width:100%;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   margin:0 auto;
   background-color: #8bc5f0;
 }
 .banner-area h6{
   text-align: center;
-  padding-top: 10%;
+  padding-top: 200px;
   font-size: 70px;
   color: black;
 }
@@ -467,6 +452,7 @@ textarea{
 
 .btn{
   border-radius: 1px;
+  height: 50px;
   width: 500px;
     background-color: black;
     color: #fff;
@@ -485,6 +471,7 @@ textarea{
   border: 2px solid rgba(30,85,250,0.47);
   background-color: #fff;
 }
+/* ==================== MENU ==================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -540,7 +527,7 @@ header{
     padding: 20px;
     background-color: var(--bg-color);
     box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
-    border: 1px solid var(--main-color);
+    border: 1px solid #55002a;
     transition: 1.5s;
 }
 .cart.active{
@@ -578,8 +565,8 @@ header{
     font-weight: 500;
 }
 .cart-quantity{
-    border: 1px solid var(--text-color);
-    outline-color: var(--main-color);
+    border: 1px solid #55002a;
+    outline-color: #55002a;
     width: 2.4rem;
     text-align: center;
     font-size: 1rem;
@@ -592,22 +579,24 @@ header{
 .total{
     display: flex;
     justify-content: flex-end;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     border-top: 1px solid var(--text-color);
 }
 .total-title{
     font-size: 1rem;
     font-weight: 600;
+    margin-top: 10px;
 }
 .total-price{
     margin-left: .5rem;
+    margin-top: 10px;
 }
 .btn-buy{
     display: flex;
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
-    background-color: var(--sec-color);
+    background-color: #55002a;
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 500;
@@ -625,7 +614,7 @@ header{
     cursor: pointer;
 }
 
-/* SHOP SECTION  */
+/* ==================== SHOP ==================== */
 .shop{
     margin-top: 2rem;
 }
@@ -667,13 +656,13 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: var(--text-color);
     color: var(--bg-color);
     padding: 10px;
     cursor: pointer;
+    background-color: #55002a
 }
 .add-cart:hover{
-    background-color: hsl(249, 32%, 17%);
+    background-color: black;
 }
 
 @media (max-width: 1080px){
