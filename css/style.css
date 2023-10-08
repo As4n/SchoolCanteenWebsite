@@ -36,10 +36,7 @@ nav ul li a{
     margin-right: 50px;
 
 }
-nav ul li a:hover{
-    color: red;
-    transition: 0.5s
-}
+
 .login a{
     color: black;
     text-decoration: none;
@@ -60,7 +57,7 @@ nav ul li a:hover{
 
 /* ==================== HEADER ==================== */
 .main{
-    background-image: url('/images/background.jpg');
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -421,7 +418,6 @@ h5{
 }
 
 .left{
-    background: url("background.png") no-repeat center;
     background-size: cover;
     height: 100%;
 }
@@ -702,4 +698,25 @@ header{
     .cart{
         width: 280px;
     }
+}
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
 }
