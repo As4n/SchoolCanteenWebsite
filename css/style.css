@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 
-/*--Navigation Bar--*/
-
+/* ==================== NAVIGATION BAR ==================== */
 nav{
     display: flex;
     align-items: center;
@@ -59,7 +58,7 @@ nav ul li a:hover{
     color: black;
 }
 
-/*--Header--*/
+/* ==================== HEADER ==================== */
 .main{
     background-image: url('/images/background.jpg');
     background-repeat: no-repeat;
@@ -83,6 +82,15 @@ nav ul li a:hover{
     text-align: center;
     font-size: 60px;
 }
+.main-heading h3{
+  color: #8bc5f0;
+  font-size: 75px;
+  position: relative;
+  top: -25px;
+  text-align: center;
+  font-size: 60px;
+}
+
 .main-heading h2{
     color: white;
     position: relative;
@@ -91,7 +99,8 @@ nav ul li a:hover{
     line-height: 23px;
     text-align: center;
 }
-/*--Header Button--*/
+
+/* ==================== HEADER BUTTON ==================== */
 .button1{
     color: black;
     text-decoration: none;
@@ -123,7 +132,8 @@ background: black;
 color: white;
 border: black;
 }
-/*--food section--*/
+
+/* ==================== FOOD SECTION ==================== */
 .seller-hr{
   height: 30px;
   border-width:0;
@@ -148,12 +158,14 @@ border: black;
   flex: 1;
   margin: 50px 20px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
+  border-radius: 25px;  
 }
 .item-card img{
   width:  100%;
   height: auto;
+  filter: drop-shadow(2px 1px 2px black);
 }
+
 .item-card img:hover{
   transform: scale(1.1);
   transition: 0.5s;
@@ -164,7 +176,7 @@ border: black;
   color: black;
 }
 .item-section .item-card p{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 0px 10px;
   margin-bottom: 20px;
@@ -177,7 +189,7 @@ border: black;
   position: relative;
 }
 
-/*--About Section on Homepage--*/
+/* ==================== HOMEPAGE: ABOUT SECTION ==================== */
 .about-hr{
   height: 10px;
   border-width: 0;
@@ -308,41 +320,56 @@ border: black;
     text-align: center;
 }
 
-/*--Service Section--*/
-h5{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 42px;
-}
-
+/* ==================== SERVICE SECTION ==================== */
 .service{
-  width: 85%;
-  padding: 100px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 75px auto;
+  background: white;
+  width: 100%;
+  padding: 20px 0px;
   text-align: center;
 }
-.service-box{
+.title h2{
+  color: black;
+  font-size: 50px;
+  width: 1130px;
+  margin: 30px auto;
+}
+.box{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
+  min-height: 400px;
 }
-.service-card{
-  height: 300px;
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin: 0px 0px;
-  padding: 20px 20px;
-  background-color: grey;
-  border-radius: 10px;
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #55002a;
+    border-radius: 5px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
-/*--Page Banner--*/
+h5{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p{
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+}
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: white;
+}
+
+
+/* ==================== PAGE BANNERS ==================== */
 .banner-area{
   background-size: cover;
   background-position: center center;
