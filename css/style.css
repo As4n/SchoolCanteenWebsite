@@ -6,53 +6,151 @@
 }
 
 /* ==================== NAVIGATION BAR ==================== */
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: white;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.content{
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 2px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  color: #8bc5f0; 
+}
+.navbar.sticky{
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo{
+ width: 250px;
+ margin-right: 100px;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #8bc5f0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 100px;
+  text-transform: bold;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #8bc5f0;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+}
+  .navbar .menu-list{
     position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,00.5);
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
 }
-nav .logo img{
-    width: 200px;
-    margin: 20px 0;
-    position: relative;
-    left: -9%;
-    cursor: pointer;
-} 
-nav ul li{
-    display: inline-block;
-    margin: 0 10px;
-}
-nav ul li a{
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-right: 50px;
-
-}
-
-.login a{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid;
-    border-radius: 30px;
-    padding: 10px 20px;
-}
-.login a:hover{
-    background-color: black;
-    color: white;
-    transition: 0.3s
-}
-.login i{
-    font-size: 30px;
-    color: black;
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
 }
 
 /* ==================== HEADER ==================== */
@@ -677,7 +775,7 @@ header{
     }
 }
 
-/* For Medium Devices */
+
 @media (max-width: 400px){
     .nav{
         padding: 11px;
@@ -690,7 +788,6 @@ header{
     }
 }
 
-/* For Small Devices */
 @media (max-width: 360px){
     .shop{
         margin-top: 1rem;
@@ -719,4 +816,7 @@ nav.fill ul li a:hover:after {
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
   opacity: 1;
+}
+.navbar .bx{
+  margin-left: 100px;
 }

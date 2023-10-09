@@ -18,23 +18,29 @@
 <body>
 
 <!--Navigation Bar-->
-<section id="Home">
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png"></a>
-        </div>
+<nav class="navbar">
+  <div class="content">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png"></a>
+    </div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="index.html#service">FAQ</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
 
-        <ul>
-          <li><a class="effect" href="index.html" class="action">Home</a></li>
-          <li><a class="effect" href="menu.html">Menu</a></li>
-          <li><a class="effect" href="index.html#service">How it Works</a></li>
-          <li><a class="effect" href="contactus.html">Contact Us</a></li>
-        </ul>
-        
-        <div class="login">
-            <i class='bx bx-shopping-bag' id="cart-icon"></i>
-        </div>
-    </nav>
+<script src="js/nav.js"></script>
+
 <!--Header-->
     <div class="main">
         <div class="main-heading">
@@ -154,7 +160,7 @@
         <ul>
           <li><a class="" href="index.html">Home</a></li>
           <li><a class="" href="menu.html">Menu</a></li>
-          <li><a class="" href="howitworks.html">How it Works</a></li>
+          <li><a class="" href="howitworks.html">FAQ</a></li>
           <li><a class="" href="contactus.html">Contact Us</a></li>
         </ul>
       </div>
